@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import tw from "twin.macro";
 import ThemeSwitch from "./ThemeSwitch";
-
+import avatar from "../public/profile-bg.png";
 const HeaderStyles = tw.header``;
 const TopLine = tw.div`bg-black py-2`;
 const Container = tw.div`hidden md:flex items-center justify-between max-w-7xl mx-auto py-4 px-2 `;
@@ -20,7 +20,7 @@ function Logo() {
     <Link href="/">
       <LogoContainer>
         <Image
-          src="/profile-bg.png"
+          src={avatar}
           className="rounded-full"
           width={50}
           height={50}
