@@ -10,14 +10,16 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "axios": "^0.27.2",
     "babel-plugin-styled-components": "^2.0.7",
+    "cloudinary-build-url": "^0.2.4",
     "next": "12.2.2",
     "next-seo": "^5.4.0",
     "next-themes": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.5",
-    "twin.macro": "^2.8.2"
+    "twin.macro": "^3.0.0-rc.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
