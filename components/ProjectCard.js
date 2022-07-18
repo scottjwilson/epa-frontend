@@ -65,8 +65,8 @@ export default function ProjectItem({ project }) {
                 placeholder="blur"
                 blurDataURL={urlBlurred}
               />
-              />
-              <Cap>{project.name}</Cap>
+
+              <Cap>{project.name} </Cap>
             </Figure>
             <Content>
               <h4 className="text-xl font-bold">{project.name}</h4>
