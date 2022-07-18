@@ -11,7 +11,7 @@ import Skills from "@/components/Skills";
 
 const Work = tw.a`bg-blue-500 text-gray-50 font-semibold rounded-lg px-12 py-4 dark:bg-blue-500 shadow transform hover:-translate-y-0.5 hover:shadow-2xl duration-300`;
 
-const ProjectGrid = tw.div`max-w-7xl mx-auto px-8 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mb-16`;
+export const ProjectGrid = tw.div`max-w-7xl mx-auto px-8 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mb-16`;
 
 export default function HomePage({ projects, about }) {
   return (
@@ -34,9 +34,6 @@ export default function HomePage({ projects, about }) {
           <ProjectCard key={i} project={project} />
         ))}
       </ProjectGrid>
-      <div className="flex bg-yellow-50 justify-center">
-        <Skills />
-      </div>
     </>
   );
 }
