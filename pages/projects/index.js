@@ -2,19 +2,19 @@ import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import axios from "axios";
 import { NextSeo } from "next-seo";
+import { ProjectGrid } from "pages";
 
 export default function ProjectsPage({ projects }) {
   return (
-    <NextSeo title="Projects">
-      {/* <Animated> */}
+    <>
+      <NextSeo title="Projects" />
       <Hero title="Projects" />
-      <div className="project-list">
+      <ProjectGrid>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </div>
-      {/* </Animated> */}
-    </NextSeo>
+      </ProjectGrid>
+    </>
   );
 }
 
