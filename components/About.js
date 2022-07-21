@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { buildUrl } from "cloudinary-build-url";
 import tw from "twin.macro";
-const Container = tw.div`max-w-4xl mx-auto px-4`;
+export const Container = tw.div`max-w-4xl mx-auto px-4`;
 const Card = tw.div`md:flex md:my-16 p-4 items-center shadow-lg shadow-blue-400  dark:shadow-blue-900 rounded-xl`;
 const ImageWrapper = tw.div`relative md:h-72 md:w-72 h-40 w-40 mx-auto`;
 
