@@ -1,11 +1,13 @@
 import Animated from "@/components/Animated";
 import Hero from "@/components/Hero";
-import Layout from "@/components/Layout";
+
 import Section from "@/components/Section";
+import { NextSeo } from "next-seo";
 
 export default function ContactPage() {
   return (
-    <Layout title="Contact">
+    <>
+      <NextSeo title="Contact" description="Contact Scott Wil" />
       <Animated>
         <Hero title="Let's create something they'll love" />
         <Section>
@@ -26,6 +28,6 @@ export default function ContactPage() {
           </div>
         </Section>
       </Animated>
-    </Layout>
+    </>
   );
 }
