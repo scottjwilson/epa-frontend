@@ -21,7 +21,7 @@ export default function NewsArticle({ news }) {
 
       <div className="md:w-2/3 md:pl-8 px-2 pt-4">
         <h2 className="text-2xl hover:underline font-semibold">
-          <a href={news.url} target="_blank">
+          <a href={news.url} target="_blank" without rel="noreferrer">
             {news.title}
           </a>
         </h2>
