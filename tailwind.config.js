@@ -4,7 +4,10 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class", // or 'media' or 'class'
+
+  daisyui: {
+    themes: ["light", "forest"],
+  },
 
   theme: {
     fontFamily: {
@@ -12,5 +15,5 @@ module.exports = {
     },
   },
 
-  // plugins: [require("@tailwindcss/typography")],
+  plugins: [require("daisyui")],
 };

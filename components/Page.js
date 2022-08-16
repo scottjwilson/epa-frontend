@@ -8,7 +8,7 @@ export default function Page({ children }) {
       className="bg-base-100"
     >
       <Header />
-      <main className="min-h-screen ">{children}</main>
+      <main className="min-h-screen mb-12">{children}</main>
 
       <Footer />
     </div>
